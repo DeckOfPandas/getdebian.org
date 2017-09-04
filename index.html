@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/getdebian.css">
 
     <!-- <link id="color-css" rel="stylesheet" href="css/colors/pink.css"> -->
     <link id="color-css" rel="stylesheet" href="css/colors/red.css">
@@ -37,15 +38,13 @@
 
   </head>
 
-  <body class="enable-animations enable-preloader preloader-dark">
+  <body class="enable-animations">
 
     <div id="document" class="document">
       <header id="header" class="header-section section section-dark navbar navbar-fixed-top">
 
         <div class="container-fluid">
-
           <div class="navbar-header navbar-left">
-
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -53,18 +52,13 @@
               <span class="icon-bar"></span>
             </button>
 
-            <!-- HEADER LOGO -->
             <a class="navbar-logo navbar-brand anchor-link" href="#hero">
               <img src="images/logos/header-logo.png" alt="Debian">
             </a>
-
           </div>
 
           <nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
-
-            <!-- NAVIGATION LINKS -->
             <ul id="header-nav" class="nav navbar-nav">
-
               <li><a href="#hero" class="hidden">Top</a></li>
 <!--
               <li><a href="#about">About</a></li>
@@ -75,26 +69,17 @@
               <li><a href="#pricing">Pricing</a></li>
 -->
 
-              <li class="header-action-button"><a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.1.0-amd64-netinst.iso" class="btn btn-primary">Download</a></li>
-
+              <li class="header-action-button"><a href="#download" class="btn btn-primary">Download</a></li>
             </ul>
-
           </nav>
-
         </div>
-
       </header>
 
-      <!-- HERO -->
       <section id="hero" class="hero-section hero-layout-simple hero-fullscreen section section-dark">
-
-        <div class="section-background">
-
-          <!-- IMAGE BACKGROUND -->
+<div class="section-background">
           <div class="section-background-image parallax" data-stellar-ratio="0.4">
-            <img src="images/backgrounds/debian.jpg" alt="" style="opacity: 0.2;">
+            <img src="images/backgrounds/debian.jpg" alt="" style="opacity: 0.5">
           </div>
-
         </div>
 
         <div class="container">
@@ -107,20 +92,17 @@
 
                   <div class="hero-heading" data-animation="fadeIn">
 
-                    <h1 class="hero-title">Debian GNU/Linux</h1>
+                    <h1 class="hero-title">Debian<span class="hidden-xs"> GNU/Linux</span></h1>
 
                     <p class="hero-tagline">
-                      Debian is a free operating system for your computer.
+                      The <em>Universal Operating System</em>&hellip;
                     </p>
 
                   </div>
 
                   <p class="hero-buttons">
-                    <!--
-                    <a href="#" class="btn btn-lg btn-default">Download now</a>
-                    <a href="#" class="btn btn-lg btn-primary">Learn more</a>
-                    -->
-                    <a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.1.0-amd64-netinst.iso" class="btn btn-lg btn-primary">Download now</a>
+                    <a href="#download" class="btn btn-lg btn-default">Download now</a>
+                    <a href="#about" class="btn btn-lg btn-primary">Learn more</a>
                   </p>
 
                 </div>
@@ -135,42 +117,45 @@
 
       </section>
 
+      <!--
       <section id="headline" class="headline-section section-gray section">
-
         <div class="container">
-
           <h2 class="section-heading text-center hidden">Tagline</h2>
-
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-
               <p class="headline-text">
-                An operating system is the set of basic programs and utilities that make your computer run. At the core of an operating system is the kernel. The kernel is the most fundamental program on the computer and does all the basic housekeeping and lets you start other programs.
+                Debian GNU/Linux is a free operating system for your computer.
+                An operating system is the set of basic programs and utilities
+                that make your computer run.
               </p>
-
             </div>
           </div>
-
         </div>
-
       </section>
+      -->
 
-      <!--
       <section id="about" class="about-section section">
-
         <div class="container">
-
-          <h2 class="section-heading text-center">About Debian</h2>
-
+          <h2 class="section-heading text-center">What is Debian?</h2>
           <div class="about-row row">
-
             <div class="about-image col-md-6" data-animation="fadeIn">
               <img src="images/contents/about.jpg" alt="Description Image">
             </div>
 
             <div class="about-text col-md-6">
-              <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros. Duis ex metus, facilisis nec porta non, accumsan vel turpis. Proin euismod, sem a mollis vestibulum, ligula elit faucibus erat, in dignissim sapien leo eget quam.</p>
+              <p class="lead">
+                Debian GNU/Linux is a free operating system for your computer.
+                An operating system is the set of basic programs and utilities
+                that make your computer run.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                feugiat arcu ut orci porta, eget porttitor felis suscipit. Sed
+                a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et
+                turpis eros. Duis ex metus, facilisis nec porta non, accumsan
+                vel turpis. Proin euismod, sem a mollis vestibulum, ligula elit
+                faucibus erat, in dignissim sapien leo eget quam.
+              </p>
               <ul class="icon-list">
                 <li>
                   <span class="icon-list-icon fa fa-hand-o-up" data-animation="bounceIn"></span>
@@ -178,32 +163,32 @@
                   <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
                 </li>
                 <li>
-                  <span class="icon-list-icon fa fa-heart-o" data-animation="bounceIn"></span>
+                  <span class="icon-list-icon fa fa-lightbulb-o" data-animation="bounceIn"></span>
                   <h4 class="icon-list-title">Lead Generation</h4>
                   <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
                 </li>
                 <li>
-                  <span class="icon-list-icon fa fa-lightbulb-o" data-animation="bounceIn"></span>
-                  <h4 class="icon-list-title">Other Purposes</h4>
-                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                  <span class="icon-list-icon fa fa-heart-o" data-animation="bounceIn"></span>
+                  <h4 class="icon-list-title">Philosophy and Community</h4>
+                  <p>
+                    Debian is <a href="https://en.wikipedia.org/wiki/Free_software">free software</a>.
+                    This means that it is released under terms that not only allow
+                    you to run the software for <strong>any purpose and without
+                    restriction</strong> but also as to study, change, and distribute
+                    any adapted versions.
+                  </p>
                 </li>
               </ul>
             </div>
-
           </div>
-
         </div>
-
       </section>
-      -->
 
       <!-- BENEFITS
       ================================= -->
       <!--
       <section id="benefits" class="benefits-section section-gray section">
-
         <div class="container">
-
           <h2 class="section-heading text-center">Why Debian?</h2>
 
           <div class="benefits-row row">
@@ -271,13 +256,9 @@
 
       <!-- HOW IT WORKS
       ================================= -->
-      <!--
       <section id="how-it-works" class="how-it-works-section section">
-
         <div class="container-fluid">
-
-          <h2 class="section-heading text-center">How it Works</h2>
-
+          <h2 class="section-heading text-center">What can I do with Debian?</h2>
           <div class="hiw-row row">
 
             <div class="col-md-3 col-sm-6" data-animation="fadeIn">
@@ -285,8 +266,12 @@
                 <img class="hiw-item-picture" src="images/contents/hiw-item-1.jpg" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">1</span>
-                  <h4 class="hiw-item-title">Choose a Layout</h4>
-                  <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
+                  <h4 class="hiw-item-title">Be productive</h4>
+                  <p class="hiw-item-description">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia Curae. Vivamus eu sollicitudin
+                    lacus, nec ultricies lorem.
+                  </p>
                 </div>
               </div>
             </div>
@@ -296,8 +281,12 @@
                 <img class="hiw-item-picture" src="images/contents/hiw-item-2.jpg" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">2</span>
-                  <h4 class="hiw-item-title">Edit &amp; Customize</h4>
-                  <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
+                  <h4 class="hiw-item-title">Be artistic</h4>
+                  <p class="hiw-item-description">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia Curae. Vivamus eu sollicitudin
+                    lacus, nec ultricies lorem.
+                  </p>
                 </div>
               </div>
             </div>
@@ -309,8 +298,12 @@
                 <img class="hiw-item-picture" src="images/contents/hiw-item-3.jpg" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">3</span>
-                  <h4 class="hiw-item-title">Upload to Hosting</h4>
-                  <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
+                  <h4 class="hiw-item-title">Learn to code</h4>
+                  <p class="hiw-item-description">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia Curae. Vivamus eu sollicitudin
+                    lacus, nec ultricies lorem
+                  </p>
                 </div>
               </div>
             </div>
@@ -320,7 +313,7 @@
                 <img class="hiw-item-picture" src="images/contents/hiw-item-4.jpg" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">4</span>
-                  <h4 class="hiw-item-title">Finished!</h4>
+                  <h4 class="hiw-item-title">Contribute</h4>
                   <p class="hiw-item-description">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Vivamus eu sollicitudin lacus, nec ultricies lorem.</p>
                 </div>
               </div>
@@ -331,7 +324,6 @@
         </div>
 
       </section>
-      -->
 
       <!-- NUMBERS
       ================================= -->
@@ -476,27 +468,27 @@
       </section>
       -->
 
-      <!-- TWO COLS DESCRIPTION SECTION
-      ================================= -->
-      <!--
-      <section id="two-cols-description" class="two-cols-description-section section-accent section">
-
+      <section id="download" class="two-cols-description-section section-accent section">
         <div class="container-fluid two-cols-description-row">
-
           <div class="two-cols-description-text" data-animation="fadeInLeft">
-
             <div class="two-cols-description-text-inner">
-
-              <h2 class="section-heading text-left">Two Columns Section</h2>
-
-              <p>You can put image / video embed in the column to the right. If you like, you can also swap the columns, which means this text column will be on the right hand side, while the image column is on the left. While on this column, you may want to put some description paragraphs or a nice list like below:</p>
+              <h2 class="section-heading text-left">Download Debian</h2>
+ 
+              <!--
+              <p>
+                Debian is distributed freely over Internet.
+              </p>
 
               <ul class="nice-list">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Sed feugiat arcu ut orci porta, eget porttitor felis suscipit.</li>
                 <li>Sed a nisl ullamcorper, tempus augue at, rutrum lacus. Duis et turpis eros.</li>
               </ul>
+              -->
 
+              <p>
+                <a href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso" class="btn btn-primary">Download debian-live-9.1.0-amd64-gnome.iso (2.2GiB)</a>
+              </p>
             </div>
 
           </div>
@@ -508,7 +500,6 @@
         </div>
 
       </section>
-      -->
 
       <!-- TESTIMONIALS
       ================================= -->
