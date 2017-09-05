@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -6,7 +10,6 @@
 <html lang="en"> <!--<![endif]-->
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -16,18 +19,18 @@
     <meta name="keywords" content="">
     <meta name="description" content="Debian">
 
-    <link rel="icon" href="images/favicons/favicon.ico">
+    <link rel="icon" href="/images/favicons/favicon.ico?{{ site.time | date: '%s%N' }}">
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="/css/font-awesome.min.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="/css/animate.min.css?{{ site.time | date: '%s%N' }}">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/getdebian.css">
-    <link id="color-css" rel="stylesheet" href="css/colors/red.css">
+    <link rel="stylesheet" href="/css/style.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="/css/getdebian.css?{{ site.time | date: '%s%N' }}">
+    <link id="color-css" rel="stylesheet" href="css/colors/red.css?{{ site.time | date: '%s%N' }}">
   </head>
 
   <body class="enable-animations">
@@ -45,7 +48,7 @@
             </button>
 
             <a class="navbar-logo navbar-brand anchor-link" href="#hero">
-              <img src="images/logos/header-logo.png" alt="Debian">
+              <img src="/images/logos/header-logo.png?{{ site.time | date: '%s%N' }}" alt="Debian">
             </a>
           </div>
 
@@ -68,7 +71,7 @@
       <section id="hero" class="hero-section hero-layout-simple hero-fullscreen section section-dark">
 <div class="section-background">
           <div class="section-background-image parallax" data-stellar-ratio="0.4">
-            <img src="images/backgrounds/debian.jpg" alt="" style="opacity: 0.5">
+            <img src="/images/backgrounds/debian.jpg?{{ site.time | date: '%s%N' }}" alt="" style="opacity: 0.5">
           </div>
         </div>
 
@@ -129,7 +132,7 @@
           <h2 class="section-heading text-center">What is Debian?</h2>
           <div class="about-row row">
             <div class="about-image col-md-6" data-animation="fadeIn">
-              <img src="images/contents/about.jpg" alt="Description Image">
+              <img src="/images/contents/about.jpg?{{ site.time | date: '%s%N' }}" alt="Description Image">
             </div>
 
             <div class="about-text col-md-6">
@@ -211,9 +214,9 @@
                 <span class="benefit-icon fa fa-lock" data-animation="bounceIn"></span>
                 <h4 class="benefit-title">Secure</h4>
                 <p class="benefit-description">
-                  No anti-virus required! Not only is Debian built on secure
-                  foundations, all software available within Debian has been
-                  analysed to verify that it isn't malicious,
+                  No anti-virus required. Not only is Debian built on secure
+                  foundations, all of the software available within Debian has
+                  been analysed to verify that it isn't malicious,
                 </p>
               </div>
             </div>
@@ -309,14 +312,16 @@
 
             <div class="col-md-3 col-sm-6" data-animation="fadeIn">
               <div class="hiw-item">
-                <img class="hiw-item-picture" src="images/contents/hiw-item-1.jpg" alt="">
+                <img class="hiw-item-picture" src="/images/contents/hiw-item-1.jpg?{{ site.time | date: '%s%N' }}" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">1</span>
                   <h4 class="hiw-item-title">Be productive</h4>
                   <p class="hiw-item-description">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia Curae. Vivamus eu sollicitudin
-                    lacus, nec ultricies lorem.
+                    With applications such as LibreOffice
+                    <a href="https://www.libreoffice.org/discover/writer/">Writer</a>,
+                    <a href="https://www.libreoffice.org/discover/calc">Calc</a> and
+                    <a href="https://www.libreoffice.org/discover/impress/">Impress</a>,
+                    you can enhance your productivity.
                   </p>
                 </div>
               </div>
@@ -324,7 +329,7 @@
 
             <div class="col-md-3 col-sm-6" data-animation="fadeIn">
               <div class="hiw-item even">
-                <img class="hiw-item-picture" src="images/contents/hiw-item-2.jpg" alt="">
+                <img class="hiw-item-picture" src="/images/contents/hiw-item-2.jpg?{{ site.time | date: '%s%N' }}" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">2</span>
                   <h4 class="hiw-item-title">Be artistic</h4>
@@ -341,14 +346,15 @@
 
             <div class="col-md-3 col-sm-6" data-animation="fadeIn">
               <div class="hiw-item">
-                <img class="hiw-item-picture" src="images/contents/hiw-item-3.jpg" alt="">
+                <img class="hiw-item-picture" src="/images/contents/hiw-item-3.jpg?{{ site.time | date: '%s%N' }}" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">3</span>
                   <h4 class="hiw-item-title">Learn to code</h4>
                   <p class="hiw-item-description">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia Curae. Vivamus eu sollicitudin
-                    lacus, nec ultricies lorem
+                    Learning to code can give your life and career a
+                    boost&hellip; and it's also fun!  Debian comes with
+                    countless programming environments to suit all
+                    requirements, tastes and abilities.
                   </p>
                 </div>
               </div>
@@ -356,14 +362,14 @@
 
             <div class="col-md-3 col-sm-6" data-animation="fadeIn">
               <div class="hiw-item even">
-                <img class="hiw-item-picture" src="images/contents/hiw-item-4.jpg" alt="">
+                <img class="hiw-item-picture" src="/images/contents/hiw-item-4.jpg?{{ site.time | date: '%s%N' }}" alt="">
                 <div class="hiw-item-text">
                   <span class="hiw-item-icon">4</span>
                   <h4 class="hiw-item-title">Contribute</h4>
                   <p class="hiw-item-description">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia Curae. Vivamus eu sollicitudin
-                    lacus, nec ultricies lorem.
+                    Join and give back to an international community of well
+                    over 1,000 volunteer Debian developers who all contribute
+                    to the project.
                   </p>
                 </div>
               </div>
@@ -382,7 +388,7 @@
         <div class="section-background">
 
           <div class="section-background-image parallax" data-stellar-ratio="0.4">
-            <img src="images/backgrounds/numbers-bg.jpg" style="opacity: 0.2;">
+            <img src="/images/backgrounds/numbers-bg.jpg?{{ site.time | date: '%s%N' }}" style="opacity: 0.2;">
           </div>
 
         </div>
@@ -466,7 +472,7 @@
           </div>
 
           <div class="two-cols-description-image" data-animation="fadeInRight">
-            <img src="images/backgrounds/two-cols-description-bg.jpg" alt="">
+            <img src="/images/backgrounds/two-cols-description-bg.jpg?{{ site.time | date: '%s%N' }}" alt="">
           </div>
 
         </div>
@@ -479,10 +485,10 @@
           <h2 class="section-heading text-center">Trusted by Millions</h2>
 
           <div class="sponsors-row" data-animation="bounceIn">
-            <img src="images/contents/sponsor-1.png" alt="">
-            <img src="images/contents/sponsor-2.png" alt="">
-            <img src="images/contents/sponsor-3.png" alt="">
-            <img src="images/contents/sponsor-4.png" alt="">
+            <img src="/images/contents/sponsor-1.png?{{ site.time | date: '%s%N' }}" alt="">
+            <img src="/images/contents/sponsor-2.png?{{ site.time | date: '%s%N' }}" alt="">
+            <img src="/images/contents/sponsor-3.png?{{ site.time | date: '%s%N' }}" alt="">
+            <img src="/images/contents/sponsor-4.png?{{ site.time | date: '%s%N' }}" alt="">
           </div>
 
           <div class="testimonial-row row">
@@ -523,7 +529,7 @@
       <section id="download" class="closing-section section-dark section">
         <div class="section-background">
           <div class="section-background-image parallax" data-stellar-ratio="0.4">
-            <img src="images/backgrounds/closing-bg.jpg" alt="" style="opacity: 0.15;">
+            <img src="/images/backgrounds/closing-bg.jpg?{{ site.time | date: '%s%N' }}" alt="" style="opacity: 0.15;">
           </div>
         </div>
 
@@ -533,10 +539,10 @@
           </h3>
             <div class="closing-buttons" data-animation="tada">
               <a
-                href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso"
+                href="{{ site.iso }}"
                 class="anchor-link btn btn-lg btn-primary"
                 data-toggle="modal"
-                onclick="$('#myModal').modal('show'); return false;"
+                onclick="$('#download-modal').modal('show'); return false;"
               >Download Debian Now</a>
             </div>
         </div>
@@ -610,22 +616,15 @@
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
-
       </section>
 
 
-      <!-- FOOTER
-      ================================= -->
       <section id="footer" class="footer-section section">
-
         <div class="container">
-
           <h3 class="footer-logo">
-            <img src="images/logos/footer-logo.png" alt="Debian">
+            <img src="/images/logos/footer-logo.png?{{ site.time | date: '%s%N' }}" alt="Debian">
           </h3>
 
           <div class="footer-socmed">
@@ -635,27 +634,11 @@
           <div class="footer-copyright">
             &copy; 2017 Chris Lamb &lt;lamby@debian.org&gt;
           </div>
-
         </div>
-
       </section>
-
     </div>
 
-    <!-- JAVASCRIPT
-    ================================= -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/respimage.min.js"></script>
-    <script src="js/jpreloader.min.js"></script>
-    <script src="js/smoothscroll.min.js"></script>
-    <script src="js/jquery.nav.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/script.js"></script>
-
-    <div id="myModal" class="modal fade">
+    <div id="download-modal" class="modal fade">
       <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -666,13 +649,13 @@
             </div>
             <div class="modal-body">
               <p>
-                Some devices that make up your computer such as wireless cards
-                may may require special software called "firmware" to function.
+                Some of your computer's components (such as wireless cards) may
+                require special software called "firmware" to function.
               </p>
               <p>
-                Whilst many of these are free and open-source, some of them are
-                non-free. This means you may need a <em>non-free</em> version
-                of Debian.
+                Whilst some of these are free and open-source, many are not.
+                This means you may need a <em>non-free</em> version of Debian
+                for parts of your system to function correctly.
               </p>
               <p>
                 If you are unsure, download the regular image.
@@ -682,11 +665,11 @@
             <div class="modal-footer">
               <p>
                 <a
-                  href="https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/9.1.0-live+nonfree/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome+nonfree.iso"
+                  href="{{ site.iso }}"
                   class="btn btn-default"
-                >w/non-free firmware</a>
+                >with non-free firmware</a>
                 <a
-                  href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso"
+                  href="{{ site.iso_nonfree }}"
                   class="btn btn-primary"
                 >Download Debian</a>
               </p>
@@ -698,9 +681,18 @@
               </p>
             </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <script src="/js/jquery-1.11.2.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/bootstrap.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/respimage.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/jpreloader.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/smoothscroll.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/jquery.nav.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/jquery.inview.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/jquery.counterup.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/jquery.stellar.min.js?{{ site.time | date: '%s%N' }}"></script>
+    <script src="/js/script.js?{{ site.time | date: '%s%N' }}"></script>
   </body>
-
 </html>
