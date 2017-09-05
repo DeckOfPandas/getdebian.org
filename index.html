@@ -13,7 +13,7 @@ layout: default
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Debian</title>
+    <title>Get Debian, a free operating system for your computer</title>
 
     <meta name="author" content="">
     <meta name="keywords" content="">
@@ -54,11 +54,10 @@ layout: default
 
           <nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
             <ul id="header-nav" class="nav navbar-nav">
-              <li><a href="#hero" class="hidden">Top</a></li>
+              <li><a href="#top" class="hidden">Top</a></li>
               <li><a href="#what">What is Debian?</a></li>
               <li><a href="#why">Why Debian?</a></li>
-              <li><a href="#who">who</a></li>
-              <li><a href="#do">What can I do with Debian?</a></li>
+              <li><a href="#do">What can I do?</a></li>
               <li><a href="#history">History</a></li>
               <li><a href="#more">Find out more</a></li>
 
@@ -68,7 +67,7 @@ layout: default
         </div>
       </header>
 
-      <section id="hero" class="hero-section hero-layout-simple hero-fullscreen section section-dark">
+      <section id="top" class="hero-section hero-layout-simple hero-fullscreen section section-dark">
 <div class="section-background">
           <div class="section-background-image parallax" data-stellar-ratio="0.4">
             <img src="/images/backgrounds/debian.jpg?{{ site.time | date: '%s%N' }}" alt="" style="opacity: 0.5">
@@ -97,41 +96,20 @@ layout: default
                     <a href="#download" class="btn btn-lg btn-default">Download now</a>
                     <a href="#about" class="btn btn-lg btn-primary">Learn more</a>
                   </p>
-
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
 
         <a href="#headline" class="hero-start-link anchor-link"><span class="fa fa-angle-double-down"></span></a>
-
       </section>
-
-      <!--
-      <section id="headline" class="headline-section section-gray section">
-        <div class="container">
-          <h2 class="section-heading text-center hidden">Tagline</h2>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <p class="headline-text">
-                Debian GNU/Linux is a free operating system for your computer.
-                An operating system is the set of basic programs and utilities
-                that make your computer run.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      -->
 
       <section id="what" class="about-section section">
         <div class="container">
           <h2 class="section-heading text-center">What is Debian?</h2>
           <div class="about-row row">
-            <div class="about-image col-md-6" data-animation="fadeIn">
+            <div class="about-image col-md-6 hidden-xs" data-animation="fadeIn">
               <img src="/images/contents/about.jpg?{{ site.time | date: '%s%N' }}" alt="Description Image">
             </div>
 
@@ -471,60 +449,11 @@ layout: default
 
           </div>
 
-          <div class="two-cols-description-image" data-animation="fadeInRight">
+          <div class="two-cols-description-image hidden-xs" data-animation="fadeInRight">
             <img src="/images/backgrounds/two-cols-description-bg.jpg?{{ site.time | date: '%s%N' }}" alt="">
           </div>
-
-        </div>
-
-      </section>
-
-      <!--
-      <section id="who" class="testimonial-section section-gray section">
-        <div class="container">
-          <h2 class="section-heading text-center">Trusted by Millions</h2>
-
-          <div class="sponsors-row" data-animation="bounceIn">
-            <img src="/images/contents/sponsor-1.png?{{ site.time | date: '%s%N' }}" alt="">
-            <img src="/images/contents/sponsor-2.png?{{ site.time | date: '%s%N' }}" alt="">
-            <img src="/images/contents/sponsor-3.png?{{ site.time | date: '%s%N' }}" alt="">
-            <img src="/images/contents/sponsor-4.png?{{ site.time | date: '%s%N' }}" alt="">
-          </div>
-
-          <div class="testimonial-row row">
-            <div class="col-sm-6">
-              <div class="testimonial">
-                <blockquote class="testimonial-quote">
-                  <p>
-                  Did you know that more than 10% of the web is powered by
-                  Debian? How many web sites would you have missed today
-                  without Debian? Debian is the operating system of choice on
-                  the international space station and countless universities,
-                  companies and public administrations rely on Debian to
-                  deliver services to millions of users around the world and
-                  beyond.
-                  </p>
-                </blockquote>
-                <cite class="testimonial-cite">Chris Lamb, Debian Project Leader 2017</cite>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="testimonial">
-                <blockquote class="testimonial-quote">
-                  <p>Nulla lectus dui, volutpat sed velit congue, pulvinar
-                  tristique nisi. Maecenas mollis rutrum bibendum. Etiam mollis
-                  diam risus, at varius ex dapibus sed. In in leo at sapien
-                  placerat sagittis. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit.</p>
-                </blockquote>
-                <cite class="testimonial-cite">Dohn Joe, Internet Marketer</cite>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-      -->
 
       <section id="download" class="closing-section section-dark section">
         <div class="section-background">
@@ -620,11 +549,12 @@ layout: default
         </div>
       </section>
 
-
       <section id="footer" class="footer-section section">
         <div class="container">
           <h3 class="footer-logo">
-            <img src="/images/logos/footer-logo.png?{{ site.time | date: '%s%N' }}" alt="Debian">
+            <a href="https://debian.org/">
+              <img src="/images/logos/footer-logo.png?{{ site.time | date: '%s%N' }}" alt="Debian">
+            </a>
           </h3>
 
           <div class="footer-socmed">
