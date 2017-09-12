@@ -455,13 +455,13 @@ layout: default
               <p>
                 That relatively small band of dedicated enthusiasts has grown
                 over the years into a volunteer organization of well over 1,000
-                Debian Developers distributed across the world and
-                collaborating over the internet.
+                Debian Developers distributed across more than 60 countries
+                worldwide, collaborating over the internet.
               </p>
             </div>
           </div>
           <div class="two-cols-description-image hidden-xs hidden-sm" data-animation="fadeInRight">
-            <img src="/images/backgrounds/two-cols-description-bg.jpg?{{ site.time | date: '%s%N' }}" alt="">
+            <img src="/images/backgrounds/two-cols-description-bg-2.jpg?{{ site.time | date: '%s%N' }}" alt="">
           </div>
         </div>
       </section>
@@ -477,20 +477,20 @@ layout: default
           <div class="numbers-row row">
             <div class="col-md-3 col-sm-6">
               <div class="numbers-item">
-                <div class="numbers-item-counter"><span class="counter-up">23,000</span></div>
+                <div class="numbers-item-counter"><span class="counter-up">{{ site.num_packages }}</span></div>
                 <div class="numbers-item-caption">Packages</div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
               <div class="numbers-item">
-                <div class="numbers-item-counter"><span class="counter-up">800</span></div>
+                <div class="numbers-item-counter"><span class="counter-up">{{ site.num_developers }}</span></div>
                 <div class="numbers-item-caption">Developers</div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
               <div class="numbers-item">
-                <div class="numbers-item-counter"><span class="counter-up">754</span>k</div>
-                <div class="numbers-item-caption">FIXME</div>
+                <div class="numbers-item-counter"><span class="counter-up">{{ site.archive_size }}</span>G</div>
+                <div class="numbers-item-caption">Archive size</div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
