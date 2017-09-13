@@ -2,12 +2,17 @@
 
 set -eu
 
+Format_number () {
+	echo "${*}" | awk '{ printf("%'"'"'d\n",$1); }'
+}
+
 num_packages="$(curl -qs 'https://packages.debian.org/unstable/allpackages?format=txt.gz' | gunzip | grep -c .)"
 archive_size="$(curl -qs https://www.debian.org/mirror/size | grep '<td>Total</td>' | cut -d\> -f5- | cut -d\< -f1)"
 num_developers="$(ssh people.debian.org ldapsearch -LLL -x -b "ou=users,dc=debian,dc=org" "objectClass=debianDeveloper" | grep -cE "^uid: ")"
 
+
 sed -i \
-	-e "s@^\(archive_size:\) .*@\1 ${archive_size}@g" \
-	-e "s@^\(num_packages:\) .*@\1 ${num_packages}@g" \
-	-e "s@^\(num_developers:\) .*@\1 ${num_developers}@g" \
+	-e "s@^\(archive_size:\) .*@\1 \"$(Format_number ${archive_size})\"@g" \
+	-e "s@^\(num_packages:\) .*@\1 \"$(Format_number ${num_packages})\"@g" \
+	-e "s@^\(num_developers:\) .*@\1 \"$(Format_number ${num_developers})\"@g" \
 	_config.yml

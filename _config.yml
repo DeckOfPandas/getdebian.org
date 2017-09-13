@@ -5,6 +5,6 @@ markdown: kramdown
 iso: https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome.iso
 iso_nonfree: https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/9.1.0-live+nonfree/amd64/iso-hybrid/debian-live-9.1.0-amd64-gnome+nonfree.iso
 
-num_packages: 108605
-num_developers: 1967
-archive_size: 2427
+num_packages: "108,706"
+num_developers: "1,967"
+archive_size: "2,421"

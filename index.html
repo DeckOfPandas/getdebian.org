@@ -461,7 +461,7 @@ layout: default
             </div>
           </div>
           <div class="two-cols-description-image hidden-xs hidden-sm" data-animation="fadeInRight">
-            <img src="/images/backgrounds/two-cols-description-bg-2.jpg?{{ site.time | date: '%s%N' }}" alt="">
+            <img src="/images/backgrounds/two-cols-description-bg.jpg?{{ site.time | date: '%s%N' }}" alt="">
           </div>
         </div>
       </section>
@@ -469,34 +469,28 @@ layout: default
       <section id="numbers" class="numbers-section section-dark section">
         <div class="section-background">
           <div class="section-background-image parallax" data-stellar-ratio="0.4">
-            <img src="/images/backgrounds/numbers-bg.jpg?{{ site.time | date: '%s%N' }}" style="opacity: 0.2;">
+            <img src="/images/backgrounds/two-cols-description-bg-2.jpg?{{ site.time | date: '%s%N' }}" style="opacity: 0.2;">
           </div>
         </div>
         <div class="container">
           <h2 class="section-heading text-center">Debian in Numbers</h2>
           <div class="numbers-row row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="numbers-item">
                 <div class="numbers-item-counter"><span class="counter-up">{{ site.num_packages }}</span></div>
                 <div class="numbers-item-caption">Packages</div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="numbers-item">
-                <div class="numbers-item-counter"><span class="counter-up">{{ site.num_developers }}</span></div>
-                <div class="numbers-item-caption">Developers</div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="numbers-item">
-                <div class="numbers-item-counter"><span class="counter-up">{{ site.archive_size }}</span>G</div>
+                <div class="numbers-item-counter"><span class="counter-up">{{ site.archive_size }}</span><small>G</small></div>
                 <div class="numbers-item-caption">Archive size</div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="numbers-item">
-                <div class="numbers-item-counter"><span class="counter-up">358</span> <span class="fa fa-coffee"></span></div>
-                <div class="numbers-item-caption">FIXME</div>
+                <div class="numbers-item-counter"><span class="counter-up">{{ site.num_developers }}</span></div>
+                <div class="numbers-item-caption">Developers from<br>60+ countries</div>
               </div>
             </div>
           </div>
@@ -506,19 +500,18 @@ layout: default
       <section id="free" class="two-cols-description-section section">
         <div class="container-fluid two-cols-description-row">
           <div class="two-cols-description-image hidden-xs hidden-sm" data-animation="fadeInRight">
-            <img src="/images/backgrounds/two-cols-description-bg.jpg?{{ site.time | date: '%s%N' }}" alt="">
+            <img src="/images/backgrounds/numbers-bg.jpg?{{ site.time | date: '%s%N' }}" alt="">
           </div>
           <div class="two-cols-description-text" data-animation="fadeInLeft">
             <div class="two-cols-description-text-inner">
-              <h2 class="section-heading text-left">Free software</h2>
+              <h2 class="section-heading text-left">But that's not all&hellip;</h2>
               <p>
-                But that's not all. Every part of Debian is <strong>free
-                software</strong>.  Whilst Debian is distributed without
-                charge, "free software" is a matter of liberty, not price:
-                think "free" as in "free speech".
+                Every part of Debian is <strong>free software</strong>. Whilst
+                Debian is distributed without charge, "free software" is a
+                matter of liberty, not price: think "free" as in "free speech".
               </p>
               <p>
-                This means you can&hellip;
+                This means you can:
               </p>
               <ul class="nice-list" style="margin-top: -20px">
                 <li>Run any program as you want for any purpose.</li>
@@ -538,6 +531,23 @@ layout: default
 
           <div class="team-row row">
             <div class="col-md-3 col-sm-6" data-animation="fadeIn">
+              <div class="team-member">
+                <div class="team-member-text">
+                  <h4 class="team-member-name">Installation Guide</h4>
+                  <div class="team-member-position">
+                    <a href="https://www.debian.org/releases/stable/amd64/">English</a>
+                    &bull;
+                    <a href="https://www.debian.org/releases/stable/installmanual">Other</a>
+                  </div>
+                  <p class="team-member-description">
+                    Once you are ready to commit to Debian, you can install it
+                    permanently onto your computer.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6" data-animation="fadeIn">
               <div class="team-member even">
                 <div class="team-member-text">
                   <h4 class="team-member-name">Debian Wiki</h4>
@@ -552,7 +562,7 @@ layout: default
             <div class="col-md-3 col-sm-6" data-animation="fadeIn">
               <div class="team-member">
                 <div class="team-member-text">
-                  <h4 class="team-member-name">Mailing lists</h4>
+                  <h4 class="team-member-name">Mailing list</h4>
                   <div class="team-member-position">
                     <a href="https://lists.debian.org/debian-user/">debian-user</a>
                     &bull;
@@ -562,7 +572,7 @@ layout: default
                   </div>
                   <p class="team-member-description">
                     As Debian is developed in a distributed manner, email is a
-                    preferred way to discuss various items.
+                    preferred way to discuss topics.
                     For support, please see the <tt>debian-user</tt> list.
                   </p>
                 </div>
@@ -583,22 +593,6 @@ layout: default
               </div>
             </div>
 
-            <div class="col-md-3 col-sm-6" data-animation="fadeIn">
-              <div class="team-member">
-                <div class="team-member-text">
-                  <h4 class="team-member-name">Installation Guide</h4>
-                  <div class="team-member-position">
-                    <a href="https://www.debian.org/releases/stable/amd64/">English</a>
-                    &bull;
-                    <a href="https://www.debian.org/releases/stable/installmanual">Other</a>
-                  </div>
-                  <p class="team-member-description">
-                    Once you are ready to commit to Debian, you can install it
-                    permanently onto your computer.
-                  </p>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
